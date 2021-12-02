@@ -143,3 +143,23 @@ body {
         font-size: 1.25em;
     }
 }
+
+.cover__red, .cover__bottom {
+    animation: appearance .75s cubic-bezier(0.4, 0, 0.2, 1) .5s 1 normal both;
+}
+
+.cover__bottom {
+    animation-delay: 1s;
+}
+
+@keyframes appearance {
+    0% {
+        opacity: 0;
+        transform: translateY(25vh);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
