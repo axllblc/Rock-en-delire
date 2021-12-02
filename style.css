@@ -9,6 +9,13 @@ body {
     /* Polices */
     --font: 'Roboto Condensed', sans-serif;
     --hfont: 'Bebas Neue', 'Roboto Condensed', sans-serif;
+
+    /* Couleurs */
+    --color1: #F5D696;
+    --color2: #F2AE4D;
+    --color3: #D38A31;
+    --color4: #984E26;
+    --color5: #431313;
 }
 
 
