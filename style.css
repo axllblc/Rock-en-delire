@@ -36,7 +36,7 @@ body {
     }
 }
 
-.header__btn, .header__ic-btn, .header__a {
+.header__btn, .header__ic-btn, .header__ic-btn.material-icons, .header__a {
     font-size: 1.25em;
     color: inherit;
     margin: 10px;
