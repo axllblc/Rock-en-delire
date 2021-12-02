@@ -31,6 +31,7 @@ body {
     padding: 25px;
     width: 100vw;
     box-sizing: border-box;
+
     color: white;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
 }
@@ -42,6 +43,7 @@ body {
 }
 
 @media screen and (max-height: 512px) {
+    /* La seconde ligne de l'en-tête est masquée si la hauteur du viewport est inférieure à 512px. */
     .header__bottom {
         opacity: 0;
         pointer-events: none;
@@ -162,4 +164,23 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+/* Présentation */
+
+.introduction {
+    margin: 50px;
+}
+
+.introduction p {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.introduction em {
+    font-weight: normal;
+    font-style: normal;
+    font-family: var(--hfont);
+    font-size: 1.75em;
 }
