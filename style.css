@@ -68,6 +68,14 @@ body {
     background-color: var(--color3);
 }
 
+.btn--filled:hover {
+    background-color: var(--color2);
+}
+
+.btn--filled:active {
+    background-color: var(--color1);
+}
+
 .a {
     border-bottom: solid transparent 2px;
 }
