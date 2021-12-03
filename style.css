@@ -241,6 +241,11 @@ h2 {
 
 /* Pied de page */
 
+footer {
+    background-color: whitesmoke;
+    padding: 5px;
+}
+
     /* newsletter */
 .newsletter {
     text-align: center;
