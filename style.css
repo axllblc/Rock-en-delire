@@ -28,12 +28,15 @@ body {
 .btn {
     padding: 10px;
     border: none;
+    display: inline-block;
+
     font-family: var(--hfont);
-    background-color: var(--color3);
-    color: black;
+    letter-spacing: 1px;
     text-decoration: none;
     font-size: 1.25em;
-    letter-spacing: 1px;
+
+    background-color: var(--color3);
+    color: black;
 }
 
 
@@ -139,6 +142,7 @@ body {
     font-family: var(--hfont);
     letter-spacing: 7.5px;
     text-shadow: rgba(255, 255, 255, 0.5) 0 0 7.5px;
+    font-weight: normal;
 }
 
 .cover__bottom {
@@ -188,10 +192,10 @@ body {
 
 .introduction {
     margin: 50px;
+    text-align: center;
 }
 
 .introduction p {
-    text-align: center;
     font-size: 1.5em;
 }
 
