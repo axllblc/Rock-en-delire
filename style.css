@@ -101,12 +101,12 @@ body {
     }
 }
 
-.header__btn {
+.header .btn:not(.ic-btn) {
     border: solid white 2px;
     padding: 5px;
 }
 
-.header__a:hover {
+.header .a:hover {
     border-bottom-color: white;
 }
 
