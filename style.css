@@ -239,10 +239,21 @@ h2 {
 
 
 
-/* FOOTER */
-/* newsletter */
-#newsletter {
+/* Pied de page */
+
+    /* newsletter */
+.newsletter {
     text-align: center;
+}
+
+.newsletter h2 {
+    margin-bottom: 10px;
+}
+
+.newsletter input[type="email"] {
+    padding: 12px;
+    font-size: 1em;
+    border: solid 2px var(--color3);
 }
 
 /* PARTENAIRE */
