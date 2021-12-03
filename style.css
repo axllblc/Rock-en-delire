@@ -24,22 +24,52 @@ body {
 }
 
 
-/* Boutons */
-.btn {
-    padding: 10px;
+/* Boutons et liens */
+
+.btn, .a {
     margin: 10px; /**/
-    border: none;
     display: inline-block; /**/
 
-    font-family: var(--hfont);
-    letter-spacing: 1px;
-    text-decoration: none; /**/
+    text-decoration: none; /*-*/
     font-size: 1.25em; /**/
 
-    background-color: var(--color3);
     color: inherit;
 
     transition: .25s; /**/
+}
+
+.btn:not(.material-icons), .a {
+    font-family: var(--hfont); /*-*/
+    letter-spacing: 1px; /*-*/
+}
+
+.btn:hover, .a:hover {
+    letter-spacing: 2px;
+}
+
+.btn:active, .a:active {
+    letter-spacing: 0px;
+}
+
+.ic-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.ic-btn:hover {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btn--filled {
+    padding: 10px;
+    border: none;
+
+    background-color: var(--color3);
+}
+
+.a {
+    border-bottom: solid transparent 2px;
 }
 
 
@@ -71,49 +101,49 @@ body {
     }
 }
 
-.header__btn, .header__ic-btn, .header__ic-btn.material-icons, .header__a {
-    font-size: 1.25em; /**/
-    color: inherit; /**/
-    margin: 10px; /**/
-    text-decoration: none; /**/
-    transition: .25s; /**/
-}
+/*.header__btn, .header__ic-btn, .header__ic-btn.material-icons, .header__a {
+/*    font-size: 1.25em; /**/
+/*    color: inherit; /**/
+/*    margin: 10px; /**/
+/*    text-decoration: none; /**/
+/*    transition: .25s; /**/
+/*}*/
 
-.header__ic-btn {
-    background-color: transparent;
-    border: none;
-}
+/*.header__ic-btn {
+/*    background-color: transparent; /**/
+/*    border: none; /**/
+/*}*/
 
-.header__btn, .header__a {
-    font-family: var(--hfont);
-    letter-spacing: 1px;
-}
+/*.header__btn, .header__a {
+/*    font-family: var(--hfont); /**/
+/*    letter-spacing: 1px; /**/
+/*}*/
 
 .header__btn {
     border: solid white 2px;
     padding: 5px;
 }
 
-.header__a {
+/*.header__a {
     border-bottom: solid transparent 2px;
-}
+}*/
 
-.header__btn:hover, .header__a:hover {
+/*.header__btn:hover, .header__a:hover {
     letter-spacing: 2px;
-}
+}*/
 
-.header__ic-btn:hover {
+/*.header__ic-btn:hover {
     padding-left: 10px;
     padding-right: 10px;
-}
+}*/
 
 .header__a:hover {
-    border-bottom: solid white 2px;
+    border-bottom-color: white;
 }
 
-.header__btn:active, .header__a:active {
+/*.header__btn:active, .header__a:active {
     letter-spacing: 0px;
-}
+}*/
 
 
 /* Affiche */
