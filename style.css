@@ -251,7 +251,7 @@ footer {
     padding: 5px;
 }
 
-    /* newsletter */
+    /* Newsletter */
 .newsletter {
     text-align: center;
 }
@@ -266,17 +266,15 @@ footer {
     border: solid 2px var(--color3);
 }
 
-/* PARTENAIRE */
-
-#partenaires {
-    margin: 0;
-    padding: 0;
+    /* Partenaires */
+.partenaires {
     display: flex;
     flex-direction: row;
     align-items: stretch;
+    justify-content: space-between;
 }
 
-#logo-partenaires {
+.partenaires__liste {
     margin: 0;
     padding: 0;
     display: flex;
@@ -286,7 +284,7 @@ footer {
     list-style: none;
 }
 
-#logo-partenaires li {
+.partenaires__liste li {
     margin: 0;
     padding: 0;
     width: 20%;
@@ -316,14 +314,15 @@ footer {
     background-image: url("https://upload.wikimedia.org/wikipedia/fr/c/cf/Indre-et-Loire_%2837%29_logo_2015.svg");
 }
 
-#boutons-partenaires {
+.partenaires__boutons {
     width: 20%;
+    display: flex;
+    flex-direction: column;
 }
 
-.bouton-partenaire a {
-    text-decoration: none;
+.partenaires__boutons .btn {
+    margin: 10px;
 }
-
 
 
 
