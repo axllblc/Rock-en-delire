@@ -349,24 +349,26 @@ footer {
 }
 
 
-#redirection {
+.redirection {
     display: flex;
     justify-content: center;
 }
 
-#div-redirection {
+.redirection__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.bouton-redirection {
+.redirection__grid .btn {
     margin: 5px;
-    padding: 5px;
-    text-align: center;
+    width: 250px;
 }
 
-.bouton-redirection a {
-    text-decoration: none;
+@media screen and (max-width: 600px) {
+    .redirection__grid {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
     /* Menu tout en bas de la page */
