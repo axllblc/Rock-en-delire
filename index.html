@@ -58,7 +58,7 @@
         <h2>À l'affiche</h2>
 
         <div class="programmation__ls-container">
-            <ul class="programmation__ls">
+            <ul class="programmation__ls" id="programmation__ls">
                 <li><a href="#"></a></li>
                 <li><a href="#"></a></li>
                 <li><a href="#"></a></li>
@@ -67,7 +67,7 @@
                 <li><a href="#"></a></li>
             </ul>
             <div class="programmation__ls-overflow">
-                
+                <span id="scroll-arrow" class="btn ic-btn material-icons">arrow_forward</span>
             </div>
         </div>
         
@@ -137,5 +137,19 @@
         </section>
 
     </footer>
+
+    <script>
+        const scrollArrowElt = document.getElementById("scroll-arrow");
+        const programmationLsElt = document.getElementById("programmation__ls");
+
+        scrollArrowElt.addEventListener("click", (e) => {
+            programmationLsElt.scrollBy(100,0);
+        })
+
+        programmationLsElt.addEventListener("wheel", (e) => {
+            e.preventDefault();
+            programmationLsElt.scrollBy(e.deltaY,0);
+        })
+    </script>
 </body>
 </html>

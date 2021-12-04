@@ -73,6 +73,7 @@ h2 {
 .ic-btn {
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .ic-btn:hover {
@@ -264,7 +265,7 @@ h2 {
     overflow-x: scroll;
     scrollbar-width: none;
     list-style: none;
-    padding-right: 250px;
+    padding-right: 150px;
 }
 
 .programmation__ls::-webkit-scrollbar {
@@ -287,7 +288,26 @@ h2 {
     bottom: 0;
     right: 0;
     width: 150px;
-    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.programmation__ls-overflow .ic-btn {
+    font-size: 50px;
+    width: fit-content;
+    margin-left: 75px;
+    user-select: none;
+}
+
+@media screen and (max-width: 768px) {
+    .programmation__ls-overflow {
+        width: 75px;
+    }
+    
+    .programmation__ls-overflow .ic-btn {
+        display: none;
+    }
 }
 
 .programmation__btn {
