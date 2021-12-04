@@ -267,6 +267,11 @@ footer {
     border: solid 2px var(--color3);
 }
 
+.newsletter input[type="submit"] {
+    margin: 10px;
+}
+
+
     /* Partenaires */
 .partenaires {
     display: flex;
