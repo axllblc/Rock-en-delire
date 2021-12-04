@@ -39,6 +39,7 @@ h2 {
     font-weight: normal;
     letter-spacing: 2px;
     font-size: 2em;
+    margin-bottom: 10px;
 }
 
 /* Boutons et liens */
@@ -253,6 +254,42 @@ h2 {
 
 /* Programmation "À l'affiche */
 
+.programmation__ls-container {
+    position: relative;
+}
+
+.programmation__ls {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    list-style: none;
+    padding-right: 250px;
+}
+
+.programmation__ls::-webkit-scrollbar {
+    width: 0;
+}
+
+.programmation__ls li {
+    width: 250px;
+    height: 300px;
+    margin: 25px;
+    justify-content: center;
+    flex-shrink: 0;
+    background-color: var(--color1);
+}
+
+.programmation__ls-overflow {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    pointer-events: none;
+}
+
 .programmation__btn {
     margin: auto;
     display: block;
@@ -270,10 +307,6 @@ footer {
     /* Newsletter */
 .newsletter {
     text-align: center;
-}
-
-.newsletter h2 {
-    margin-bottom: 10px;
 }
 
 .newsletter input[type="email"] {
