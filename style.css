@@ -131,6 +131,13 @@ h2 {
         pointer-events: none;
     }
 }
+@media screen and (max-width: 450px) {
+    /* La seconde ligne de l'en-tête est masquée si la largeur du viewport est inférieure à 450px. */
+    .header__bottom {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
 
 .header .a, .header .btn {
     margin: 10px;
