@@ -44,8 +44,9 @@ h2 {
 /* Boutons et liens */
 
 .btn, .a {
-    /*margin: 10px;*/
     display: inline-block;
+
+    text-align: center;
 
     text-decoration: none;
     font-size: 1.25em;
