@@ -265,6 +265,7 @@ h2 {
     overflow-x: scroll;
     scrollbar-width: none;
     list-style: none;
+    padding-left: 50px;
     padding-right: 150px;
 }
 
@@ -272,13 +273,30 @@ h2 {
     width: 0;
 }
 
-.programmation__ls li {
-    width: 250px;
+.programmation__ls a {
+    width: 300px;
     height: 300px;
     margin: 25px;
-    justify-content: center;
+    
     flex-shrink: 0;
+
     background-color: var(--color1);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border: none;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.programmation__ls a li {
+    padding: 10px;
+    padding-top: 20px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5));
 }
 
 .programmation__ls-overflow {
