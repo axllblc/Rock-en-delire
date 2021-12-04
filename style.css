@@ -3,16 +3,8 @@ body {
     font-family: var(--font);
 }
 
-section {
-    margin: 25px;
-}
-
-h2 {
-    text-align: center;
-    font-family: var(--hfont);
-    font-weight: normal;
-    letter-spacing: 2px;
-    font-size: 2em;
+* {
+    scroll-behavior: smooth;
 }
 
 ::selection {
@@ -35,6 +27,19 @@ h2 {
     --color5: #431313;
 }
 
+/* Sections et titres */
+
+section {
+    margin: 25px;
+}
+
+h2 {
+    text-align: center;
+    font-family: var(--hfont);
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-size: 2em;
+}
 
 /* Boutons et liens */
 
