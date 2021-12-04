@@ -164,7 +164,7 @@ h2 {
     height: 100vh;
 
     background-color: black;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('background.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('img/background.jpg');
     background-size: cover;
     background-position: center;
 
@@ -319,19 +319,6 @@ footer {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-}
-
-#logo-partenaire-1 {
-    background-image: url("https://upload.wikimedia.org/wikipedia/fr/c/cf/Indre-et-Loire_%2837%29_logo_2015.svg");
-}
-#logo-partenaire-2 {
-    background-image: url("https://upload.wikimedia.org/wikipedia/fr/c/cf/Indre-et-Loire_%2837%29_logo_2015.svg");
-}
-#logo-partenaire-3 {
-    background-image: url("https://upload.wikimedia.org/wikipedia/fr/c/cf/Indre-et-Loire_%2837%29_logo_2015.svg");
-}
-#logo-partenaire-4 {
-    background-image: url("https://upload.wikimedia.org/wikipedia/fr/c/cf/Indre-et-Loire_%2837%29_logo_2015.svg");
 }
 
 .partenaires__boutons {
