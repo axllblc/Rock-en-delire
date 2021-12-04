@@ -325,6 +325,29 @@ footer {
     margin: 10px;
 }
 
+@media screen and (max-width: 768px) {
+    .partenaires {
+        flex-direction: column;
+    }
+
+    .partenaires__liste {
+        width: 100%;
+        height: 100px;
+    }
+
+    .partenaires__boutons {
+        flex-direction: row;
+        width: auto;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .partenaires__boutons {
+        flex-direction: column;
+    }
+}
 
 
 #redirection {
