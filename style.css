@@ -251,6 +251,14 @@ h2 {
 }
 
 
+/* Programmation "À l'affiche */
+
+.programmation__btn {
+    margin: auto;
+    display: block;
+    width: fit-content;
+}
+
 
 /* Pied de page */
 
