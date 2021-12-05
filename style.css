@@ -203,6 +203,10 @@ h2 {
         opacity: 0;
         pointer-events: none;
     }
+
+    .header {
+        padding: 10px;
+    }
 }
 
 .header .a, .header .btn {
