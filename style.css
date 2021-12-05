@@ -521,6 +521,10 @@ h2 {
     flex: 2;
 }
 
+.debut-article {
+    text-align: justify;
+}
+
 .suite-article {
     text-decoration: none;
 }
