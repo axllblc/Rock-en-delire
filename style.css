@@ -182,6 +182,8 @@ h2 {
 
     color: white;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+
+    transition: background .25s;
 }
 
 .header__top, .header__bottom {
@@ -193,15 +195,13 @@ h2 {
 @media screen and (max-height: 512px) {
     /* La seconde ligne de l'en-tête est masquée si la hauteur du viewport est inférieure à 512px. */
     .header__bottom {
-        opacity: 0;
-        pointer-events: none;
+        display: none;
     }
 }
 @media screen and (max-width: 450px) {
     /* La seconde ligne de l'en-tête est masquée si la largeur du viewport est inférieure à 450px. */
     .header__bottom {
-        opacity: 0;
-        pointer-events: none;
+        display: none;
     }
 
     .header {
@@ -224,6 +224,10 @@ h2 {
 
 .header .a:hover {
     border-bottom-color: white;
+}
+
+.header--background {
+    background-color: black;
 }
 
 
