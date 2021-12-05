@@ -524,6 +524,10 @@ h2 {
     flex: 2;
 }
 
+.debut-article {
+    text-align: justify;
+}
+
 .tweets {
     flex: 1;  
 }
