@@ -143,12 +143,12 @@
         const programmationLsElt = document.getElementById("programmation__ls");
 
         scrollArrowElt.addEventListener("click", (e) => {
-            programmationLsElt.scrollBy(100,0);
+            programmationLsElt.scrollBy(300,0);
         })
 
         programmationLsElt.addEventListener("wheel", (e) => {
             e.preventDefault();
-            programmationLsElt.scrollBy(e.deltaY,0);
+            programmationLsElt.scrollBy(e.deltaY * 3,0);
         })
     </script>
 </body>
