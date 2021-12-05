@@ -383,8 +383,20 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
+    .programmation__ls {
+        padding-left: 25px;
+        padding-right: 75px;
+    }
+
+    .programmation__ls a {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+    }
+
     .programmation__ls-overflow {
         width: 75px;
+        pointer-events: none;
     }
     
     .programmation__ls-overflow .ic-btn {
