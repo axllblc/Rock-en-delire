@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="img/programmation/programmation.css">
     <link rel="stylesheet" href="img/partenaires/partenaires.css">
+    <link rel="stylesheet" href="img/article/article.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -94,7 +95,103 @@
 
 
     <!--Actualités-->
-    <!--Tweets-->
+    <h2>Actualités</h2>
+    <div class="ligne-actualite">
+        <div class="alignement-article">
+            <section class="actualite">
+                <div class="chevron">
+                    <span class="material-icons" id="chevron_left">chevron_left</span>
+                </div>
+                <div class="articles-div">
+                    <ul class="articles-ul">
+                        <li class="article-li" id="article1">
+                            <article class="article">
+                                <div class="img-article" id="img-article-1"></div>
+                                <div class="contenu-article">
+                                    <h4 class="titre-article">Ouverture de la billetterie (date du 12 novembre)</h4>
+                                    <p class="debut-article">La billetterie pour participer à l’édition 2022 du festival est ouverte ! Ne tardez pas à prendre votre billet, pour être sûr d’avoir une place pour vous et vos amis ! Vous retrouverez bientôt…</p>
+                                    <a href="#" class="suite-article">Lire la suite</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="article-li" id="article2">
+                            <article class="article">
+                                <div class="img-article" id="img-article-2"></div>
+                                <div class="contenu-article">
+                                    <h4 class="titre-article">Le programme 2022 est disponible !</h4>
+                                    <p class="debut-article">Vous pouvez d’ores et déjà consulter la programmation 2022. Comme chaque année, de nouveaux artistes font leur apparition, pour toujours plus enrichir la diversité du public. Font leur apparition…</p>
+                                    <a href="#" class="suite-article">Lire la suite</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="article-li" id="article3">
+                            <article class="article">
+                                <div class="img-article" id="img-article-3"></div>
+                                <div class="contenu-article">
+                                    <h4 class="titre-article">Un cadeau de la part de notre nouveau partenaire</h4>
+                                    <p class="debut-article">L’équipe du festival vous informe avoir trouver un nouveau partenaire premium : The Coca-Cola Company ! Et ce n’est pas tout : en tant que nouveau partenaire il offre une cannette de soda à chaque participant. Vous pourrez la récupérer…</p>
+                                    <a href="#" class="suite-article">Lire la suite</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="article-li" id="article4">
+                            <article class="article">
+                                <div class="img-article" id="img-article-4"></div>
+                                <div class="contenu-article">
+                                    <h4 class="titre-article">Nouveautés dans la boutique des goodies</h4>
+                                    <p class="debut-article">Découvrez nos nouveaux goodies pour l’édition 2022 dans la boutique officielle du site du festival. La nouveauté de cette année : la possibilité de personnaliser votre t-shirt avec un message personnalisé ! Vous trouverez également des nouveaux… </p>
+                                    <a href="#" class="suite-article">Lire la suite</a>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+                <div class="chevron">
+                    <span class="material-icons"  id="chevron_right">chevron_right</span>
+                </div>
+            </section>
+            <a href="#" class="btn btn--filled" style="text-align: center;">Plus d'actualités</a>
+        </div>
+        <script>
+            const chevron_left = document.getElementById("chevron_left");
+            const chevron_right = document.getElementById("chevron_right");
+
+            let articles = [document.getElementById("article1"),
+                            document.getElementById("article2"),
+                            document.getElementById("article3")];
+
+            var index = 0;
+
+            chevron_right.addEventListener("click", (e) => {
+                articles[index].style.display = "none";
+                index+=1;
+                if(index == articles.length) {
+                    index=0;
+                    articles[index].style.display = "block";
+                } else {
+                    articles[index].style.display = "block";
+                }
+                
+            })
+
+            chevron_left.addEventListener("click", (e) => {
+                articles[index].style.display = "none";
+                index-=1;
+                if(index == -1) {
+                    index=articles.length-1;
+                    articles[index].style.display = "block";
+                } else {
+                    articles[index].style.display = "block";
+                }
+                
+            })
+        </script>
+        <!--Tweets-->
+        <section class="tweets">
+            <a class="twitter-timeline" href="https://twitter.com/RockDelire?ref_src=twsrc%5Etfw" data-height="250">Tweets by RockDelire</a> 
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </section>
+    </div>
     <!--Instagram-->
     <!--Playlist officielle-->
     <!-- Pied de page -->
