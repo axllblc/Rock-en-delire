@@ -38,8 +38,8 @@
         <div class="header__top">
             <button class="material-icons btn ic-btn" title="Menu" id="menu-btn">menu</button>
             <a href="#" class="btn">Programmation</a>
-            <div style="flex: 1;">
-                <!--Icône-->
+            <div class="red header__red" id="header__red">
+                <a href="#">Rock en délire</a>
             </div>
             <a href="#" class="btn">Billetterie</a>
             <button class="material-icons btn ic-btn" title="Rechercher">search</button>
@@ -55,7 +55,7 @@
 
     <!-- Affiche -->
     <div class="cover">
-        <h1 class="cover__red">Rock en délire</h1>
+        <h1 class="red cover__red">Rock en délire</h1>
         <div class="cover__bottom">
             <span style="font-weight: 700;">15&#8239;–&#8239;18</span> juillet 2022 — <span style="font-weight: 700;">Tours</span>
         </div>
@@ -179,12 +179,17 @@
 
         // En-tête
         const headerElt = document.getElementById("header");
+        const headerRedElt = document.getElementById("header__red");
 
         window.addEventListener("scroll", (e) => {
             if (window.pageYOffset > window.innerHeight) {
                 headerElt.style.backgroundColor = "rgba(0, 0, 0, 0.75)";
+                headerRedElt.style.opacity = "1";
+                headerRedElt.style.pointerEvents = "";
             } else {
                 headerElt.style.backgroundColor = "";
+                headerRedElt.style.opacity = "0";
+                headerRedElt.style.pointerEvents = "none";
             }
         });
 

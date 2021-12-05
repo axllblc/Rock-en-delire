@@ -28,6 +28,16 @@ body {
     --color5: #431313;
 }
 
+/* Rock en délire */
+.red {
+    text-transform: uppercase;
+    font-family: var(--hfont);
+    letter-spacing: 7.5px;
+    text-shadow: rgba(255, 255, 255, 0.5) 0 0 7.5px;
+    font-weight: normal;
+}
+
+
 /* Sections et titres */
 
 section {
@@ -193,6 +203,26 @@ h2 {
     justify-content: center;
 }
 
+.header__red {
+    flex: 1;
+    font-size: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .25s;
+    opacity: 0;
+}
+
+.header__red a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header__red:hover {
+    text-shadow: rgba(255, 255, 255, 0.75) 0 0 10px;
+}
+
 @media screen and (max-height: 512px) {
     /* La seconde ligne de l'en-tête est masquée si la hauteur du viewport est inférieure à 512px. */
     .header__bottom {
@@ -205,8 +235,19 @@ h2 {
         display: none;
     }
 
+    .header__red {
+        display: none;
+    }
+
     .header {
         padding: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__red {
+        visibility: hidden;
+        font-size: 0;
     }
 }
 
@@ -253,11 +294,6 @@ h2 {
     font-size: 7.5em;
     margin: 25px;
     margin-bottom: 2.5vh;
-    text-transform: uppercase;
-    font-family: var(--hfont);
-    letter-spacing: 7.5px;
-    text-shadow: rgba(255, 255, 255, 0.5) 0 0 7.5px;
-    font-weight: normal;
 }
 
 .cover__bottom {
