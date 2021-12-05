@@ -18,7 +18,7 @@
 <body>
 
     <!-- Menu -->
-    <nav class="menu menu--hidden">
+    <nav class="menu menu--hidden" id="menu">
         <ul>
             <li><a href="#" class="a">Programmation</a></li>
             <li><a href="#" class="a">Billetterie</a></li>
@@ -36,7 +36,7 @@
     <!-- En-tête -->
     <header class="header">
         <div class="header__top">
-            <button class="material-icons btn ic-btn" title="Menu">menu</button>
+            <button class="material-icons btn ic-btn" title="Menu" id="menu-btn">menu</button>
             <a href="#" class="btn">Programmation</a>
             <div style="flex: 1;">
                 <!--Icône-->
@@ -155,17 +155,40 @@
     </footer>
 
     <script>
+        // Menu
+        const menuElt = document.getElementById("menu");
+        const menuBackgroundElt = document.getElementById("menu-background");
+        const menuBtnElt = document.getElementById("menu-btn");
+
+        menuBtnElt.addEventListener("click", (e) => {
+            menuElt.classList.remove("menu--hidden");
+            menuBackgroundElt.classList.remove("menu-background--hidden");
+        });
+        
+        menuBackgroundElt.addEventListener("mousedown", (e) => {
+            menuElt.classList.add("menu--hidden");
+            menuBackgroundElt.classList.add("menu-background--hidden");
+        })
+
+        menuElt.addEventListener("click", (e) => {
+            if (e.target.tagName == 'A') {
+                menuElt.classList.add("menu--hidden");
+                menuBackgroundElt.classList.add("menu-background--hidden");
+            }
+        })
+
+        // Programmation
         const scrollArrowElt = document.getElementById("scroll-arrow");
         const programmationLsElt = document.getElementById("programmation__ls");
 
         scrollArrowElt.addEventListener("click", (e) => {
             programmationLsElt.scrollBy(300,0);
-        })
+        });
 
         programmationLsElt.addEventListener("wheel", (e) => {
             e.preventDefault();
             programmationLsElt.scrollBy(e.deltaY * 3,0);
-        })
+        });
     </script>
 </body>
 </html>
