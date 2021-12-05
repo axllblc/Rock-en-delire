@@ -451,22 +451,24 @@ h2 {
     width: fit-content;
 }
 
-/* ACTUALITE */
+
+/* Actualités */
 
 .ligne-actualite {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    margin: 10px;
 }
 
 .alignement-article {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    flex: 2;
     align-items: stretch;
 }
 
 .actualite {
-    
     display: flex;
     flex-direction: row;
 }
@@ -474,6 +476,7 @@ h2 {
 .chevron {
     display: flex;
     width: 10%;
+    cursor: pointer;
 }
 
 .chevron span {
@@ -521,16 +524,8 @@ h2 {
     flex: 2;
 }
 
-.suite-article {
-    text-decoration: none;
-}
-
-.suite-article:hover {
-    color:lightblue;
-}
-
 .tweets {
-    width: 30%;   
+    flex: 1;  
 }
 
 
