@@ -34,7 +34,7 @@
     <div class="menu-background menu-background--hidden" id="menu-background"></div>
 
     <!-- En-tête -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="header__top">
             <button class="material-icons btn ic-btn" title="Menu" id="menu-btn">menu</button>
             <a href="#" class="btn">Programmation</a>
@@ -176,6 +176,17 @@
                 menuBackgroundElt.classList.add("menu-background--hidden");
             }
         })
+
+        // En-tête
+        const headerElt = document.getElementById("header");
+
+        window.addEventListener("scroll", (e) => {
+            if (window.pageYOffset > window.innerHeight) {
+                headerElt.style.backgroundColor = "rgba(0, 0, 0, 0.75)";
+            } else {
+                headerElt.style.backgroundColor = "";
+            }
+        });
 
         // Programmation
         const scrollArrowElt = document.getElementById("scroll-arrow");

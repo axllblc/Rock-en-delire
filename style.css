@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: var(--font);
+    background-color: white;
 }
 
 * {
@@ -224,10 +225,6 @@ h2 {
 
 .header .a:hover {
     border-bottom-color: white;
-}
-
-.header--background {
-    background-color: black;
 }
 
 
