@@ -532,6 +532,12 @@ h2 {
     flex: 1;  
 }
 
+@media screen and (max-width: 768px) {
+    .ligne-actualite {
+        flex-direction: column;
+    }
+}
+
 
 /* Pied de page */
 
