@@ -538,6 +538,41 @@ h2 {
     }
 }
 
+/* INSTAGRAM */
+.instagram {
+    width: 48%;
+}
+
+.instagram ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.instagram ul li {
+    padding: 0;
+    margin-right: 10px;
+}
+
+.post-insta {
+    margin: 0;
+}
+
+.post-insta img {
+    width: 100%;
+    margin: 5px;
+    margin-bottom: 0;
+}
+
+/* SPOTIFY */
+
+.spotify {
+    margin-left: 20px;
+}
+
 
 /* Pied de page */
 
